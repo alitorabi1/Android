@@ -1,0 +1,9 @@
+to install:
+https://developer.android.com/studio/index.html
+
+https://developer.android.com/about/dashboards/index.html
+
+http://wsdesign.in/
+
+First document:
+https://docs.google.com/document/d/1xbCgRQsVS-ZhCT9tKkunK_7Ta0jGX-qfbXIdm3dsHnU/edit#
