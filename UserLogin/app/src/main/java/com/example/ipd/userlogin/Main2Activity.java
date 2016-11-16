@@ -11,11 +11,8 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
 
-    TextView tv;
     EditText et;
-    EditText et2;
     String name;
-    String email;
     SharedPreferences sharedPref;
 
     @Override
@@ -25,7 +22,8 @@ public class Main2Activity extends AppCompatActivity {
         sharedPref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         name = getIntent().getExtras().getString("Name");
         et  = (EditText)findViewById(R.id.editText2);
-        String stored_text = sharedPref.getString(name, name);
+        String stored_text = sharedPref.getString(name, "User email");
+        et.setText(stored_text);
     }
 
     public void mainClick(View view) {

@@ -44,14 +44,13 @@ class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
 public class MainActivity extends AppCompatActivity {
 
     ImageView iv;
-    DownloadImageTask dit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iv = (ImageView) findViewById(R.id.imgview);
-        dit = new DownloadImageTask(iv);
+        DownloadImageTask dit = new DownloadImageTask(iv);
         dit.execute("http://i.dailymail.co.uk/i/pix/2011/07/22/article-2017556-0D19A66B00000578-401_634x415.jpg");
     }
 
@@ -64,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
         String[] images={img1, img2, img3, img4, img5};
         Random r = new Random();
         int n=r.nextInt(5);
-        dit.execute(images[n]);
+        DownloadImageTask dit1 = new DownloadImageTask(iv);
+        dit1.execute(images[n]);
     }
 
 }

@@ -9,14 +9,12 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     EditText et;
-    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         et = (EditText)findViewById(R.id.editText);
-        et.setText(name);
     }
 
     public void mainClick(View view) {
