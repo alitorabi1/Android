@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
             while (true) {
                 // call the publishProgress method
                 // publishProgress will call the onProgressUpdate method
+<<<<<<< HEAD
                 if ( isCancelled())
                     break;
                 try {
@@ -65,6 +66,17 @@ public class MainActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.i("makemachine", e.getMessage());
                 }
+=======
+                    if ( isCancelled())
+                    break;
+                    try {
+                        Thread.sleep(200);
+                        publishProgress(i);
+                        i++;
+                    } catch (Exception e) {
+                        Log.i("makemachine", e.getMessage());
+                    }
+>>>>>>> d28ae1a1f6fabff433ceecc20d707815b97b920c
             }
             return null;
         }
