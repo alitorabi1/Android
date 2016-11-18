@@ -23,32 +23,43 @@ public class MainActivity extends AppCompatActivity {
         txt = (TextView) findViewById(R.id.textView);
     }
 
+    UpdateTask updateTask = new UpdateTask();
+
     public void startApp(View view) {
         // detect the view that was "clicked"
-        switch (view.getId()) {
-            case R.id.button:
-                new UpdateTask().execute();
-                break;
+        if (updateTask != null && updateTask.getStatus() == AsyncTask.Status.RUNNING){
+            if (updateTask.isCancelled()) {
+                updateTask = new UpdateTask();
+                updateTask.execute();
+            }
+        } else {
+            updateTask.execute();
         }
     }
 
-    private class UpdateTask extends AsyncTask<Void, Integer, Void> {
+    public void stopApp(View view) {
+        // detect the view that was "clicked"
+        updateTask.cancel(true);
+    }
+
+    class UpdateTask extends AsyncTask<Void, Integer, Void> {
 
         protected void onProgressUpdate(Integer... i) {
-            // code to update the user interface goes here
+            // code to update the user interface
             super.onProgressUpdate(i);
             txt.setText(i[0].toString());
         }
 
-
         @Override
         protected Void doInBackground(Void... params) {
             int i = 0;
-            while (!isCancelled()) {
-                // you will need to call the publishProgress method somewhere here
+            while (true) {
+                // call the publishProgress method
                 // publishProgress will call the onProgressUpdate method
+                    if ( isCancelled())
+                    break;
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(200);
                         publishProgress(i);
                         i++;
                     } catch (Exception e) {
@@ -58,14 +69,5 @@ public class MainActivity extends AppCompatActivity {
             return null;
         }
 
-
-        public void stopApp(View view) {
-            //this is 'Stop' button click listener
-            switch (view.getId()) {
-                case R.id.button2:
-                    new UpdateTask().cancel(false);
-                    break;
-            }
-       }
     }
 }
