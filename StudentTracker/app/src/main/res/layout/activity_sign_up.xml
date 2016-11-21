@@ -148,7 +148,8 @@
         android:layout_alignLeft="@+id/editText8"
         android:layout_alignStart="@+id/editText8"
         android:layout_marginTop="35dp"
-        android:id="@+id/button5" />
+        android:id="@+id/button5"
+        android:onClick="register" />
 
     <Button
         android:layout_width="25dp"
@@ -159,5 +160,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="13dp"
-        android:layout_marginEnd="13dp" />
+        android:layout_marginEnd="13dp"
+        android:onClick="goBack" />
 </RelativeLayout>
