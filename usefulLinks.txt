@@ -7,3 +7,6 @@ http://wsdesign.in/
 
 First document:
 https://docs.google.com/document/d/1xbCgRQsVS-ZhCT9tKkunK_7Ta0jGX-qfbXIdm3dsHnU/edit#
+
+Video
+https://examples.javacodegeeks.com/android/android-videoview-example/

@@ -31,7 +31,8 @@
         android:layout_marginLeft="39dp"
         android:layout_marginStart="39dp"
         android:layout_marginBottom="27dp"
-        android:id="@+id/button" />
+        android:id="@+id/button"
+        android:onClick="signIn" />
 
     <Button
         android:text="Sign up"
@@ -43,7 +44,8 @@
         android:layout_alignBaseline="@+id/button"
         android:layout_alignBottom="@+id/button"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="signUp" />
 
     <Button
         android:text="Watch the demo what to do"
@@ -54,5 +56,6 @@
         android:layout_alignStart="@+id/button"
         android:id="@+id/button3"
         android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:layout_alignEnd="@+id/button2"
+        android:onClick="watchDemo" />
 </RelativeLayout>
