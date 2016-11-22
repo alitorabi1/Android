@@ -31,7 +31,7 @@ public class ListItems extends AppCompatActivity {
         setContentView(R.layout.activity_list_items);
 
         CustomListAdapter adapter = new CustomListAdapter(this, itemname, imgid);
-        list=(ListView)findViewById(R.id.list);
+        list = (ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {

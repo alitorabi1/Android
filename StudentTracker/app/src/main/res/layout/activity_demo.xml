@@ -22,18 +22,14 @@
         android:layout_marginEnd="13dp"
         android:onClick="goBack" />
 
-    <VideoView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="57dp"
-        android:id="@+id/videoView"
-        android:layout_below="@+id/button8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:soundEffectsEnabled="true"
-        android:pointerIcon="none"
-        android:nestedScrollingEnabled="false"
-        android:layout_centerHorizontal="false"
-        android:elevation="1dp" />
+    <FrameLayout android:id="@+id/video_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <VideoView android:id="@+id/demoViewer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </FrameLayout>
 
 </RelativeLayout>

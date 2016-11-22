@@ -11,3 +11,4 @@ https://docs.google.com/document/d/1xbCgRQsVS-ZhCT9tKkunK_7Ta0jGX-qfbXIdm3dsHnU/
 Video
 https://examples.javacodegeeks.com/android/android-videoview-example/
 http://mrbool.com/how-to-play-video-formats-in-android-using-videoview/28299
+http://blog.blundellapps.co.uk/show-youtube-user-videos-in-a-listview/
