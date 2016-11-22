@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 updateTask.execute();
             }
         } else {
+            updateTask = new UpdateTask();
             updateTask.execute();
         }
     }
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 if ( isCancelled())
                     break;
                 try {
-                    Thread.sleep(7000);
+                    Thread.sleep(5000);
                     publishProgress(i);
                     i++;
                 } catch (Exception e) {

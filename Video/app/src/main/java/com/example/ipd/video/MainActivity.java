@@ -1,19 +1,17 @@
-package com.example.ipd.studenttracker;
+package com.example.ipd.video;
 
         import android.app.Activity;
         import android.app.ProgressDialog;
-        import android.content.Intent;
         import android.content.res.Configuration;
         import android.media.MediaPlayer;
         import android.media.MediaPlayer.OnPreparedListener;
         import android.net.Uri;
         import android.os.Bundle;
         import android.util.Log;
-        import android.view.View;
         import android.widget.MediaController;
         import android.widget.VideoView;
 
-public class Demo extends Activity {
+public class MainActivity extends Activity {
 
     private VideoView myVideoView;
     private int position = 0;
@@ -25,18 +23,18 @@ public class Demo extends Activity {
         super.onCreate(savedInstanceState);
 
         // set the main layout of the activity
-        setContentView(R.layout.activity_demo);
+        setContentView(R.layout.activity_main);
 
         //set the media controller buttons
         if (mediaControls == null) {
-            mediaControls = new MediaController(Demo.this);
+            mediaControls = new MediaController(MainActivity.this);
         }
 
         //initialize the VideoView
         myVideoView = (VideoView) findViewById(R.id.video_view);
 
         // create a progress bar while the video file is loading
-        progressDialog = new ProgressDialog(Demo.this);
+        progressDialog = new ProgressDialog(MainActivity.this);
         // set a title for the progress bar
         progressDialog.setTitle("JavaCodeGeeks Android Video View Example");
         // set a message for the progress bar
@@ -78,24 +76,19 @@ public class Demo extends Activity {
 
     }
 
-//    @Override
-//    public void onSaveInstanceState(Bundle savedInstanceState) {
-//        super.onSaveInstanceState(savedInstanceState);
-//        //we use onSaveInstanceState in order to store the video playback position for orientation change
-//        savedInstanceState.putInt("Position", myVideoView.getCurrentPosition());
-//        myVideoView.pause();
-//    }
-//
-//    @Override
-//    public void onRestoreInstanceState(Bundle savedInstanceState) {
-//        super.onRestoreInstanceState(savedInstanceState);
-//        //we use onRestoreInstanceState in order to play the video playback from the stored position
-//        position = savedInstanceState.getInt("Position");
-//        myVideoView.seekTo(position);
-//    }
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        //we use onSaveInstanceState in order to store the video playback position for orientation change
+        savedInstanceState.putInt("Position", myVideoView.getCurrentPosition());
+        myVideoView.pause();
+    }
 
-    public void goBack(View v) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        //we use onRestoreInstanceState in order to play the video playback from the stored position
+        position = savedInstanceState.getInt("Position");
+        myVideoView.seekTo(position);
     }
 }

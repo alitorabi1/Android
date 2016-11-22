@@ -14,7 +14,7 @@ public class SignUp extends AppCompatActivity {
     }
 
     public void register(View v){
-        Intent intent = new Intent(this, SignIn.class);
+        Intent intent = new Intent(this, ListItems.class);
         startActivity(intent);
     }
 
