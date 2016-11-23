@@ -12,14 +12,15 @@
     tools:context="com.example.ipd.studenttracker.MainActivity">
 
     <TextView
-        android:text="Create a positive culture  Teachers can encourage students for any skill or value whether it's working hard, being kind, helping others or something else"
+        android:text="Ready to build an amazing classroom community? StudentTracker is a beautiful, safe and simple communication app for teachers, parents and students."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="29dp"
         android:id="@+id/textView"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
     <Button
         android:text="Sign in"

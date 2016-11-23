@@ -29,6 +29,7 @@ public class ListItems extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_items);
+        setTitle("Home room");
 
         CustomListAdapter adapter = new CustomListAdapter(this, itemname, imgid);
         list = (ListView)findViewById(R.id.list);

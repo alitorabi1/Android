@@ -26,6 +26,7 @@ public class Demo extends Activity {
 
         // set the main layout of the activity
         setContentView(R.layout.activity_demo);
+        setTitle("Demo");
 
         //set the media controller buttons
         if (mediaControls == null) {
@@ -38,7 +39,7 @@ public class Demo extends Activity {
         // create a progress bar while the video file is loading
         progressDialog = new ProgressDialog(Demo.this);
         // set a title for the progress bar
-        progressDialog.setTitle("JavaCodeGeeks Android Video View Example");
+        progressDialog.setTitle("Video View Example");
         // set a message for the progress bar
         progressDialog.setMessage("Loading...");
         //set the progress bar not cancelable on users' touch

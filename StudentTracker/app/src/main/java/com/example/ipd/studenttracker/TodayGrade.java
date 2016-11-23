@@ -11,6 +11,7 @@ public class TodayGrade extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_today_grade);
+        setTitle("Grade");
     }
 
     public void goBack(View v) {
