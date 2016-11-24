@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/back5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/kelid_kharid_rightel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:src="@drawable/kelid_kharid_rightel" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/khali" />
+    <ImageView android:id="@+id/kelid_balance_rightel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:src="@drawable/kelid_balance_rightel" android:layout_below="@+id/kelid_kharid_rightel" android:layout_alignLeft="@+id/kelid_kharid_rightel" android:contentDescription="@string/khali" />
+    <ImageView android:id="@+id/kelid_khadamat_rightel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31.0dip" android:src="@drawable/kelid_khadamat_rightel" android:layout_below="@+id/kelid_balance_rightel" android:layout_alignLeft="@+id/kelid_balance_rightel" android:contentDescription="@string/khali" />
+    <ImageView android:id="@+id/rightell_tanzimat" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/kelid_main_tanzimat" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

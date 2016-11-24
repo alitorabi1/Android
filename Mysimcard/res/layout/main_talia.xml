@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/back4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/kharid_talia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="123.0dip" android:src="@drawable/kelid_kharid_talia" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/khali" />
+    <ImageView android:id="@+id/balance_talia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:src="@drawable/kelid_balance_talia" android:layout_below="@+id/kharid_talia" android:layout_alignLeft="@+id/kharid_talia" android:contentDescription="@string/khali" />
+    <ImageView android:id="@+id/talia_tanzimat" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/kelid_main_tanzimat" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

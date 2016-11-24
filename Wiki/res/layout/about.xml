@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oder_back" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/about_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/wiki" />
+
+            <TextView
+                android:id="@+id/about_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Large Text"
+                android:textAlignment="viewEnd"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/about_txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:text="Large Text"
+                android:textAlignment="viewEnd"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/about_txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:text="Large Text"
+                android:textAlignment="viewEnd"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/about_txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Large Text"
+                android:textAlignment="viewEnd"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/about_txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:text="Large Text"
+                android:textAlignment="viewEnd"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/about_txt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:text="Large Text"
+                android:textAlignment="viewEnd"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

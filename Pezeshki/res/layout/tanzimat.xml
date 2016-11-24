@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back" >
+
+    <ImageView
+        android:id="@+id/tanzimat_font_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tanzimat_font_kelid" />
+
+    <ImageView
+        android:id="@+id/tanzimat_sayz_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tanzimat_font_kelid"
+        android:layout_below="@+id/tanzimat_font_kelid"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tanzimat_sayz_kelid" />
+
+    <ImageView
+        android:id="@+id/tanzimat_day_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tanzimat_sayz_kelid"
+        android:layout_below="@+id/tanzimat_sayz_kelid"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tanzimat_day_kelid" />
+
+    <ImageView
+        android:id="@+id/tanzimat_night_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tanzimat_day_kelid"
+        android:layout_below="@+id/tanzimat_day_kelid"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tanzimat_night_kelid" />
+
+</RelativeLayout>

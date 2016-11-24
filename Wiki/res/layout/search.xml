@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_back" >
+
+    <ImageView
+        android:id="@+id/s_start_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/search_start_kelid" />
+
+    <ImageView
+        android:id="@+id/s_cancel_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/search_cancel_kelid" />
+
+     <RadioButton
+        android:id="@+id/rd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rd1"
+        android:layout_below="@+id/rd1"
+        android:clickable="false"
+        android:text="کلمات مشابه را هم جستجو کن" />
+     
+    <EditText
+        android:id="@+id/s_text_fild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+   
+
+    <RadioButton
+        android:id="@+id/rd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/s_text_fild"
+        android:enabled="true"
+        android:text="فقط همین کلمه را جستجو کن" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/back2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/kelid_ch_hamrahaval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="47.0dip" android:src="@drawable/kelid_ch_hamrahaval" android:layout_alignLeft="@+id/kelid_khadamat_hamrahaval" android:layout_alignParentTop="true" android:contentDescription="@string/kelid_kharid" />
+    <ImageView android:id="@+id/kelid_balanc_hamrahaval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kelid_balance_hamrahaval" android:layout_below="@+id/kelid_ch_hamrahaval" android:layout_alignLeft="@+id/kelid_ch_hamrahaval" android:contentDescription="@string/khali" />
+    <ImageView android:id="@+id/kelid_khadamat_hamrahaval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kelid_kadamat_hamrahaval" android:layout_below="@+id/kelid_balanc_hamrahaval" android:layout_alignLeft="@+id/kelid_ava_hamrahaval" android:contentDescription="@string/kelid_khadamat" />
+    <ImageView android:id="@+id/kelid_ava_hamrahaval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kelid_ava_hamrahaval" android:layout_below="@+id/kelid_khadamat_hamrahaval" android:layout_centerHorizontal="true" android:contentDescription="@string/kelid_ava" />
+    <ImageView android:id="@+id/hamrahaval_tanzimat" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/kelid_main_tanzimat" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

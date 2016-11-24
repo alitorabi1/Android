@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/back_ussd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/ussd_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ussd_no" android:layout_below="@+id/ussd_yes" android:layout_alignLeft="@+id/ussd_yes" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@+id/ussd_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="240.0dip" android:src="@drawable/ussd_yes" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="23.0sp" android:textColor="@color/black" android:id="@+id/ussd_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/app_name" android:layout_below="@+id/ussd_titr" android:layout_centerInParent="true" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="25.0sp" android:textColor="@color/black" android:id="@+id/ussd_titr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:text="@string/app_name" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

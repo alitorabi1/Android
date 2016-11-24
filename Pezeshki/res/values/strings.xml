@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">دانستنیهای سلامت</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="font_nazanin">نازنین</string>
+    <string name="font_titr">تیتر</string>
+    <string name="font_homa">هما</string>
+    <string name="font_nas">نستعلیق</string>
+    <string name="pooriya">پوریا انجمنی</string>
+    <string name="share">اشتراک گذاری با</string>
+
+</resources>

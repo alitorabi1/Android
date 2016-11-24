@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_back" >
+
+     <ScrollView
+         android:id="@+id/schelp2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:scrollbars="vertical" >
+         
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        
+    <ImageView
+        android:id="@+id/run_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel_kelid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/user_download_run_kelid" />
+
+    <ImageView
+        android:id="@+id/cancel_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/about_txt6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user_download_cancel_kelid" />
+
+    <TextView
+        android:id="@+id/firstdownload_payam_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:text="نام فایل:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/user_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_toLeftOf="@+id/firstdownload_payam_text"
+        android:gravity="right"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/help2_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/user_name_text"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:text="توضیحات:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/user_matn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/help2_txt2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/help2_txt2"
+        android:gravity="right"
+        android:text="matn"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/help2_txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/user_matn_text"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:text="نوع فایل:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/user_mode_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/help2_txt3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@+id/help2_txt3"
+        android:gravity="center_vertical"
+        android:text="mode"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/about_txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/help2_txt3"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:text="وضعیت:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/user_rez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/about_txt6"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/about_txt6"
+        android:gravity="fill_vertical"
+        android:text="rez"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/abi" />
+
+    <ImageView
+        android:id="@+id/download_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/about_txt6"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user_download_download_kelid" />
+
+   
+    </RelativeLayout>
+
+    
+
+       
+       
+     </ScrollView>
+
+</RelativeLayout>

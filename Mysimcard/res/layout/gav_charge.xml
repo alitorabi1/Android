@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gav_charge_back" >
+
+    <ImageView
+        android:id="@+id/gav_charge_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:src="@drawable/gav_charge_hazf_kelid" />
+
+    <ImageView
+        android:id="@+id/gav_charge_sma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/gav_charge_send_kelid" />
+
+    <ImageView
+        android:id="@+id/gav_charge_smo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/gav_charge_senm_kelid" />
+
+    <ImageView
+        android:id="@+id/gav_charge_cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/gav_charge_chargem_kelid" />
+
+    <EditText
+        android:id="@+id/gav_charge_ntext"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="230dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="093"
+        android:textSize="20.0sp"
+        android:visibility="invisible" >
+
+        <requestFocus />
+    </EditText>
+    <ImageView android:id="@+id/gav_charge_tk" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/gav_charge_taid_kelid" android:layout_toRightOf="@id/gav_charge_ntext" android:layout_alignTop="@id/gav_charge_ntext" />
+
+    <TextView
+        android:id="@+id/gav_charge_matn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/gav_charge_arzesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:text="آماده استفاده"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/gav_charge_cs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignTop="@color/black"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/gav_charge_charges_kelid" />
+
+    <ImageView
+        android:id="@+id/hazf_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/gav_charge_hazf_yes"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/hazf_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/gav_charge_hazf_text"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/hazf_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/gav_charge_hazf_no"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/gav_charge_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:text="3690025478563210"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

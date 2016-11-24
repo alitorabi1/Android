@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">مدیریت سیم کارت</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="khali"></string>
+    <string name="Irancell">irancell</string>
+    <string name="HamrahAval">HamrahAval</string>
+    <string name="Talia">Talia</string>
+    <string name="Rightel">Rightel</string>
+    <string name="kelid_kharid">Kharid</string>
+    <string name="kelid_khadamat">Khadamat</string>
+    <string name="kelid_ava">Ava</string>
+    <string name="kelid2_kharid">kharid</string>
+    <string name="kelid2_khadamat">Khadamat</string>
+    <string name="kelid2_pishvaz">Pishvaz</string>
+    <string name="exit_img">Exit</string>
+    <string name="exit_no"></string>
+    <string name="exit_yes">yes</string>
+    <string name="set_key">Setting</string>
+    <string name="back">Back</string>
+    <string name="kelid_sim_setting">Simcard</string>
+    <string name="hint_txtchcode">رمزشارژخود را اینجا وارد کنید</string>
+    <string name="btn_addi">معمولی</string>
+    <string name="btn_sh">شگفت انگیز</string>
+    <string name="btn_addi_hamrahaval">شارژ</string>
+    <string name="widget_hamrah_kharid">خرید شارژ همراه اول</string>
+    <string name="widget_hamrah_balance">مشاهده اعتبار همراه اول</string>
+    <string name="widget_irancell_kharid">خرید شارژ ایرانسل</string>
+    <string name="widget_irancell_balance">مشاهده اعتبار ایرانسل</string>
+    <string name="widget_talia_balance">مشاهده اعتبار تالیا</string>
+    <string name="widget_talia_kharid">خرید شارژ تالیا</string>
+    <string name="ch_send">ارسال با اس ام اس</string>
+    <string name="Widget_rightel_kharid">خرید شارژ رایتل</string>
+    <string name="Widget_rightel_balance">مشاهده اعتبار رایتل</string>
+
+</resources>
+
+
+

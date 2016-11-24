@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Reference.wikifull"
+    android:versionCode="2"
+    android:versionName="2.0" 
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wiki"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Reference.wikipdf.Main"
+            android:label="@string/app_name" 
+            android:configChanges = "keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Reference.wikipdf.AndroidFileDownloader"
+            android:label="@string/app_name" 
+            android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Reference.wikipdf.Main_list"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Reference.wikipdf.Downloader_File"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+          
+        
+        
+        
+        
+        <activity
+            android:name="com.Reference.wikipdf.Search"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+         <activity
+            android:name="com.Reference.wikipdf.m1"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+          
+          
+          
+         <activity
+            android:name="com.Reference.wikipdf.m10"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+           
+         
+          <activity
+            android:name="com.Reference.wikipdf.m11"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+          
+           <activity
+            android:name="com.Reference.wikipdf.m12"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+            <activity
+            android:name="com.Reference.wikipdf.m13"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+            
+            
+             <activity
+            android:name="com.Reference.wikipdf.m14"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+              <activity
+            android:name="com.Reference.wikipdf.m15"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+              
+              
+                <activity
+            android:name="com.Reference.wikipdf.m103"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+              
+                  <activity
+            android:name="com.Reference.wikipdf.m105"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+              
+                  
+                  
+                    <activity
+            android:name="com.Reference.wikipdf.m136"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+                    
+                      <activity
+            android:name="com.Reference.wikipdf.m1417"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.Reference.wikipdf.m151"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+         <activity
+            android:name="com.Reference.wikipdf.help"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+          <activity
+            android:name="com.Reference.wikipdf.help2"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+          
+          
+           <activity
+            android:name="com.Reference.wikipdf.about"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar" 
+               android:screenOrientation="portrait">
+        </activity>
+           
+    </application>
+
+</manifest>

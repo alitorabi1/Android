@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Publication.pezeshkisalamt"
+    android:versionCode="3"
+    android:versionName="1.2" 
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+	 
+    
+    
+    
+     <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.Publication.pezeshkisalamt.Main"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.tanzimat"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.text"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.z_text"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.b_text"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        
+         <activity
+            android:name="com.Publication.pezeshkisalamt.danestaniha_list"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.main_p"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.soalat"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+       
+        
+        
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.bimariha"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.danestaniha"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.darokhane"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+      
+        
+        
+        
+        
+    
+        
+        
+      
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.moarefi"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.nokat"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.Publication.pezeshkisalamt.tabestan"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+         <activity
+            android:name="com.Publication.pezeshkisalamt.zibayi"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+          <activity
+            android:name="com.Publication.pezeshkisalamt.z_men"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+          
+           <activity
+            android:name="com.Publication.pezeshkisalamt.z_women"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+        
+         
+         
+         
+         
+         
+         <activity
+            android:name="com.Publication.pezeshkisalamt.tanzimat_font"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+         
+         <activity
+            android:name="com.Publication.pezeshkisalamt.tanzimat_size"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+         
+         <activity
+            android:name="com.Publication.pezeshkisalamt.tanzimat_seda"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        
+        
+        </application>
+
+</manifest>

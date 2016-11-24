@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mysimcard.tools"
+    android:versionCode="6"
+    android:versionName="3.5" 
+     android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mysimcard.tools.Start"
+            android:label="@string/app_name"
+            
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        
+        
+        
+        <activity
+            android:name="com.mysimcard.tools.main2"
+            android:label="@string/app_name"
+            
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+        
+        <activity
+            android:name="com.mysimcard.tools.ussd"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        <activity
+            android:name="com.mysimcard.tools.key"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+         <activity
+            android:name="com.mysimcard.tools.Pishvaz_hamrah"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+           <activity
+            android:name="com.mysimcard.tools.gav_charge"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+           
+         
+         <activity
+            android:name="com.mysimcard.tools.about"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+         
+        
+         <activity
+            android:name="com.mysimcard.tools.Pishvaz_irancell"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+          
+        
+         
+         
+         
+          <activity
+            android:name="com.mysimcard.tools.tanzimat"
+            android:label="@string/app_name"
+              android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+          
+        
+           
+           
+        
+            <activity
+            android:name="com.mysimcard.tools.widget_balanceh"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+            <activity
+            android:name="com.mysimcard.tools.widget_balancer"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+            
+            
+            
+             <activity
+            android:name="com.mysimcard.tools.tanzimat_modesim"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+             
+              <activity
+            android:name="com.mysimcard.tools.tanzimat_modebuy"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+            
+            
+             <activity
+            android:name="com.mysimcard.tools.ch"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+            
+             <activity
+            android:name="com.mysimcard.tools.Widget_balancei"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+             
+               <activity
+            android:name="com.mysimcard.tools.widget_balancet"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+        
+        
+            
+           
+           
+           <activity
+            android:name="com.mysimcard.tools.khadamat_irancell"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+           
+            <activity
+            android:name="com.mysimcard.tools.Gav"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+            
+            
+             <activity
+            android:name="com.mysimcard.tools.list_charge"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+           
+           
+        
+           
+           <activity
+            android:name="com.mysimcard.tools.khadamat_irancell2"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+           
+           <activity
+            android:name="com.mysimcard.tools.khadamat_hamrahaval"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+           
+           <activity
+            android:name="com.mysimcard.tools.khadamat_talia"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+           
+           <activity
+            android:name="com.mysimcard.tools.khadamat_rightel"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+               android:screenOrientation="portrait" >
+        </activity>
+        
+           
+              <activity
+            android:name="com.mysimcard.tools.ch_rightel"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+               android:screenOrientation="portrait" >
+        </activity>
+        
+           
+           
+           <activity
+            android:name="com.mysimcard.tools.chm_irancell"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+           
+          
+         <activity
+            android:name="com.mysimcard.tools.ch_hamrah"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+         
+         
+         
+           <activity
+            android:name="com.mysimcard.tools.ch_talia"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+           
+           
+           
+            
+        
+         <activity
+            android:name="com.mysimcard.tools.main3"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+         
+         
+        
+         
+         <activity
+            android:name="com.mysimcard.tools.ch_aval"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+         
+         
+         
+          <activity
+            android:name="com.mysimcard.tools.main4"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+          
+          
+          
+          
+          
+          
+          <activity
+            android:name="com.mysimcard.tools.exit"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+          
+          
+          
+          
+          
+           <activity
+            android:name="com.mysimcard.tools.main5"
+            android:label="@string/app_name"
+               android:configChanges = "keyboard|keyboardHidden|orientation"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+               android:screenOrientation="portrait">
+        </activity>
+        
+           
+           
+           
+           
+           
+           
+           <receiver
+            android:name=".Widget_hamrah_kharid"
+            android:label="@string/widget_hamrah_kharid"
+            android:icon="@drawable/widget_hamrah_kharid"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_hamrah_kharid_p" />
+        </receiver>
+        
+           
+           
+           
+           
+           
+           
+           
+           <receiver
+            android:name=".Widget_hamrah_balance"
+            android:label="@string/widget_hamrah_balance"
+            android:icon="@drawable/widget_hamrah_balance"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_hamrah_balance_p" />
+        </receiver>
+        
+           
+           
+           
+           
+        
+           
+           
+           
+           
+           
+           <receiver
+            android:name=".Widget_irancell_kharid"
+            android:label="@string/widget_irancell_kharid"
+            android:icon="@drawable/widget_irancell_kharid"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_irancell_kharid_p" />
+        </receiver>
+        
+           
+           
+           
+           
+           
+            <receiver
+            android:name=".widget_talia_kharid"
+            android:label="@string/widget_talia_kharid"
+            android:icon="@drawable/widget_talia_kharid"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_talia_kharid_p" />
+        </receiver>
+        
+          
+            
+             <receiver
+            android:name=".Widget_rightel_kharid"
+            android:label="@string/Widget_rightel_kharid"
+            android:icon="@drawable/widget_rightel_kharid"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_rightel_kharid_p" />
+        </receiver>
+        
+           
+           
+           
+           
+           
+           
+           
+           <receiver
+            android:name=".Widget_irancell_balance"
+            android:label="@string/widget_irancell_balance"
+            android:icon="@drawable/widget_irancell_balance"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_irancell_balance_p" />
+        </receiver>
+        
+           
+           
+           
+             
+           <receiver
+            android:name=".widget_talia_balance"
+            android:label="@string/widget_talia_balance"
+            android:icon="@drawable/widget_talia_balance"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_talia_balance_p" />
+        </receiver>
+        
+           
+           
+              
+           <receiver
+            android:name=".Widget_rightel_balance"
+            android:label="@string/Widget_rightel_balance"
+            android:icon="@drawable/widget_rightel_balance"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_rightel_balance_p" />
+        </receiver>
+           
+           
+           
+           
+          
+          
+        
+           
+        
+        
+        
+        
+    </application>
+
+</manifest>

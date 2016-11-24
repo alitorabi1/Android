@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abi"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/d_part1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/text_size" />
+
+    <ImageView
+        android:id="@+id/tanzimat_size_koochak_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/d_part1"
+        android:layout_below="@+id/d_part1"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tanzimat_size_koochak_kelid" />
+
+    <ImageView
+        android:id="@+id/tanzimat_size_motevaset_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tanzimat_size_koochak_kelid"
+        android:layout_below="@+id/tanzimat_size_koochak_kelid"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tanzimat_size_motevaset_kelid" />
+
+    <ImageView
+        android:id="@+id/tanzimat_size_bozorg_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tanzimat_size_motevaset_kelid"
+        android:layout_below="@+id/tanzimat_size_motevaset_kelid"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tanzimat_size_bozorg_kelid" />
+
+</RelativeLayout>

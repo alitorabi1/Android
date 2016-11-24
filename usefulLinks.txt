@@ -1,4 +1,4 @@
-to install:
+﻿to install:
 https://developer.android.com/studio/index.html
 
 https://developer.android.com/about/dashboards/index.html
@@ -12,3 +12,8 @@ Video
 https://examples.javacodegeeks.com/android/android-videoview-example/
 http://mrbool.com/how-to-play-video-formats-in-android-using-videoview/28299
 http://blog.blundellapps.co.uk/show-youtube-user-videos-in-a-listview/
+
+
+Iranian android websites:
+http://appinapps.com/View/articles/view/aid/105
+دانلود سورس برنامه های اپ دیتابیس برای اندروید

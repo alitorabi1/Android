@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    tools:context=".Main" >
+
+    <ScrollView
+        android:id="@+id/schelp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="70dp"
+        android:scrollbars="vertical" >
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" >
+     
+      <ImageView
+        android:id="@+id/main_search_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_start_kelid"
+        android:layout_below="@+id/main_start_kelid"
+        android:src="@drawable/main_search_kelid" />
+
+    <ImageView
+        android:id="@+id/main_help_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_search_kelid"
+        android:layout_below="@+id/main_search_kelid"
+        android:src="@drawable/main_help_kelid" />
+
+    <ImageView
+        android:id="@+id/main_khorooj_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_help_kelid"
+        android:layout_below="@+id/main_help_kelid"
+        android:src="@drawable/main_exit_kelid" />
+
+    <ImageView
+        android:id="@+id/main_start_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_updatedb_kelid"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/main_start_kelid" />
+     
+     </RelativeLayout>
+     
+    </ScrollView>
+
+   
+    
+
+    <ImageView
+        android:id="@+id/main_updatedb_kelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/main_up_kelid" />
+
+   
+
+    <TextView
+        android:id="@+id/main_payam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:paddingRight="7dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black" />
+
+</RelativeLayout>
