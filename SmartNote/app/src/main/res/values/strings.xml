@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SmartNote</string>
+    <string name="name">Name : </string>
+    <string name="title">Title : </string>
+    <string name="no_title">No Title</string>
+    <string name="no_name">No Name</string>
+    <string name="edit_note">Edit</string>
+    <string name="save_note">Save</string>
+    <string name="delete_note">Delete</string>
+    <string name="gallery">Gallery</string>
+</resources>
