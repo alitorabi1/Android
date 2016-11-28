@@ -3,7 +3,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="#FFF9C8">
-	        
+
 	<RelativeLayout
 	    android:id="@+id/toplayout"
 	    android:background="@drawable/notetop"

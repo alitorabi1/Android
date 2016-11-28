@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -25,6 +26,7 @@ public class EditNote extends Activity{
     private EditText mNameText;
     private EditText mBodyText;
     private TextView mDateText;
+	private ImageView mImageView;
     private Long mNoteId;
 
     private Cursor note;
@@ -44,8 +46,10 @@ public class EditNote extends Activity{
         mNameText = (EditText) findViewById(R.id.title);
         mBodyText = (EditText) findViewById(R.id.body);
         mDateText = (TextView) findViewById(R.id.notelist_date);
+//		mImageView = (ImageView) findViewById(R.id.imageView);
+//		mImageView.bringToFront();
 
-        long msTime = System.currentTimeMillis();  
+        long msTime = System.currentTimeMillis();
         Date curDateTime = new Date(msTime);
  	
         SimpleDateFormat formatter = new SimpleDateFormat("d'/'M'/'y");  
@@ -159,14 +163,14 @@ public class EditNote extends Activity{
 	        String body = mBodyText.getText().toString();
 
 	        if(mNoteId == null){
-	        	long id = mDbHelper.makeNote(name, body, curDate);
+	        	long id = mDbHelper.makeNote(name, body, curDate, "http://cdn.clipcanvas.com/thumbs/medium/465841.jpg");
 	        	if(id > 0){
 					mNoteId = id;
 	        	}else{
 	        		Log.e("saveState","failed to create note");
 	        	}
 	        }else{
-	        	if(!mDbHelper.updateNote(mNoteId, name, body, curDate)){
+	        	if(!mDbHelper.updateNote(mNoteId, name, body, curDate, "http://cdn.clipcanvas.com/thumbs/medium/465841.jpg")){
 	        		Log.e("saveState","failed to update note");
 	        	}
 	        }

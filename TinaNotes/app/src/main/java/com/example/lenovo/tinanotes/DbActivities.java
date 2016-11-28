@@ -15,18 +15,19 @@ public class DbActivities {
     public static final String NAME = "name";
     public static final String DATE = "date";
     public static final String BODY = "body";
+    public static final String IMAGE = "image";
     public static final String NOTEID = "_id";
 
     private DatabaseHelper mDbHelper;
     private SQLiteDatabase mDb;
 
     private static final String DATABASE_NAME = "data";
-    private static final String DATABASE_TABLE = "tinanote";
+    private static final String DATABASE_TABLE = "tinanotes";
     private static final int DATABASE_VERSION = 2;
 
     private static final String DATABASE_CREATE =
-        "CREATE TABLE IF NOT EXISTS tinanote (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-        + "name VARCHAR NOT NULL, body VARCHAR NOT NULL, date VARCHAR NOT NULL);";
+        "CREATE TABLE IF NOT EXISTS tinanotes (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+        + "name VARCHAR NOT NULL, body VARCHAR NOT NULL, date VARCHAR NOT NULL, image VARCHAR);";
 
     private final Context mCtx;
 
@@ -66,11 +67,12 @@ public class DbActivities {
     }
 
 
-    public long makeNote(String name, String body, String date) {
+    public long makeNote(String name, String body, String date, String image) {
         ContentValues initialValues = new ContentValues();
         initialValues.put(NAME, name);
         initialValues.put(BODY, body);
         initialValues.put(DATE, date);
+        initialValues.put(IMAGE, image);
 
         return mDb.insert(DATABASE_TABLE, null, initialValues);
     }
@@ -91,7 +93,7 @@ public class DbActivities {
         Cursor mCursor =
 
             mDb.query(true, DATABASE_TABLE, new String[] {NOTEID,
-                            NAME, BODY, DATE}, NOTEID + "=" + noteId, null,
+                            NAME, BODY, DATE, IMAGE}, NOTEID + "=" + noteId, null,
                     null, null, null, null);
         if (mCursor != null) {
             mCursor.moveToFirst();
@@ -107,12 +109,13 @@ public class DbActivities {
         return mCursor;
     }
 
-    public boolean updateNote(long noteId, String name, String body, String date) {
+    public boolean updateNote(long noteId, String name, String body, String date, String image) {
         ContentValues args = new ContentValues();
         args.put(NAME, name);
         args.put(BODY, body);
         args.put(DATE, date);
-        
+        args.put(IMAGE, image);
+
         return mDb.update(DATABASE_TABLE, args, NOTEID + "=" + noteId, null) > 0;
     }
 
