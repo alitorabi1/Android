@@ -25,7 +25,7 @@ tools:context=".MainActivity" >
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@+id/editText1"
-    android:onClick="addUser"
+    android:onClick="addItem"
     android:text="Add an Item" />
 
 <Button
@@ -34,7 +34,7 @@ tools:context=".MainActivity" >
     android:layout_height="wrap_content"
     android:layout_toRightOf="@+id/addBtn"
     android:layout_below="@+id/editText1"
-    android:onClick="deleteFirstUser"
+    android:onClick="deleteFirstItem"
     android:text="Remove Item" />
 
 <ListView

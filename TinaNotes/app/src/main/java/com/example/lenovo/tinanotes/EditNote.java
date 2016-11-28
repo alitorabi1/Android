@@ -4,12 +4,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.database.Cursor;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -21,31 +18,30 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class NoteEdit extends Activity{
+public class EditNote extends Activity{
 	
-	public static int numTitle = 1;	
 	public static String curDate = "";
 	public static String curText = "";	
-    private EditText mTitleText;
+    private EditText mNameText;
     private EditText mBodyText;
     private TextView mDateText;
-    private Long mRowId;
+    private Long mNoteId;
 
     private Cursor note;
 
-    private NotesDbAdapter mDbHelper;
+    private DbActivities mDbHelper;
       
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        mDbHelper = new NotesDbAdapter(this);
+        mDbHelper = new DbActivities(this);
         mDbHelper.open();        
         
-        setContentView(R.layout.note_edit);
+        setContentView(R.layout.edit_note);
         setTitle(R.string.app_name);
 
-        mTitleText = (EditText) findViewById(R.id.title);
+        mNameText = (EditText) findViewById(R.id.title);
         mBodyText = (EditText) findViewById(R.id.body);
         mDateText = (TextView) findViewById(R.id.notelist_date);
 
@@ -56,13 +52,13 @@ public class NoteEdit extends Activity{
         curDate = formatter.format(curDateTime);        
         
         mDateText.setText(""+curDate);
-        
 
-        mRowId = (savedInstanceState == null) ? null :
-            (Long) savedInstanceState.getSerializable(NotesDbAdapter.KEY_ROWID);
-        if (mRowId == null) {
+
+		mNoteId = (savedInstanceState == null) ? null :
+            (Long) savedInstanceState.getSerializable(DbActivities.NOTEID);
+        if (mNoteId == null) {
             Bundle extras = getIntent().getExtras();
-            mRowId = extras != null ? extras.getLong(NotesDbAdapter.KEY_ROWID)
+			mNoteId = extras != null ? extras.getLong(DbActivities.NOTEID)
                                     : null;
         }
 
@@ -71,18 +67,19 @@ public class NoteEdit extends Activity{
     }
 	
 	  public static class LineEditText extends EditText{
-			// we need this constructor for LayoutInflater
+
+		  private Rect mRect;
+		  private Paint mPaint;
+
+		  // we need this constructor for LayoutInflater
 			public LineEditText(Context context, AttributeSet attrs) {
 				super(context, attrs);
 					mRect = new Rect();
 			        mPaint = new Paint();
 			        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-			        mPaint.setColor(Color.BLUE);
+//			        mPaint.setColor(Color.BLUE);
 			}
 
-			private Rect mRect;
-		    private Paint mPaint;	    
-		    
 		    @Override
 		    protected void onDraw(Canvas canvas) {
 		  
@@ -113,7 +110,7 @@ public class NoteEdit extends Activity{
 	    protected void onSaveInstanceState(Bundle outState) {
 	        super.onSaveInstanceState(outState);
 	        saveState();
-	        outState.putSerializable(NotesDbAdapter.KEY_ROWID, mRowId);
+	        outState.putSerializable(DbActivities.NOTEID, mNoteId);
 	    }
 	    
 	    @Override
@@ -143,8 +140,8 @@ public class NoteEdit extends Activity{
 	    			note.close();
 	    			note = null;
 	    		}
-	    		if(mRowId != null){
-	    			mDbHelper.deleteNote(mRowId);
+	    		if(mNoteId != null){
+	    			mDbHelper.deleteNote(mNoteId);
 	    		}
 	    		finish();
 
@@ -158,36 +155,34 @@ public class NoteEdit extends Activity{
 		}
 
 	    private void saveState() {
-	        String title = mTitleText.getText().toString();
+	        String name = mNameText.getText().toString();
 	        String body = mBodyText.getText().toString();
 
-	        if(mRowId == null){
-	        	long id = mDbHelper.createNote(title, body, curDate);
+	        if(mNoteId == null){
+	        	long id = mDbHelper.makeNote(name, body, curDate);
 	        	if(id > 0){
-	        		mRowId = id;
+					mNoteId = id;
 	        	}else{
 	        		Log.e("saveState","failed to create note");
 	        	}
 	        }else{
-	        	if(!mDbHelper.updateNote(mRowId, title, body, curDate)){
+	        	if(!mDbHelper.updateNote(mNoteId, name, body, curDate)){
 	        		Log.e("saveState","failed to update note");
 	        	}
 	        }
 	    }
 	    
-	  
 	    private void populateFields() {
-	        if (mRowId != null) {
-	            note = mDbHelper.fetchNote(mRowId);
+	        if (mNoteId != null) {
+	            note = mDbHelper.selectNoteById(mNoteId);
 	            startManagingCursor(note);
-	            mTitleText.setText(note.getString(
-	    	            note.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE)));
+	            mNameText.setText(note.getString(
+	    	            note.getColumnIndexOrThrow(DbActivities.NAME)));
 	            mBodyText.setText(note.getString(
-	                    note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
+	                    note.getColumnIndexOrThrow(DbActivities.BODY)));
 	            curText = note.getString(
-	                    note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY));
+	                    note.getColumnIndexOrThrow(DbActivities.BODY));
 	        }
 	    }
-
 
 }

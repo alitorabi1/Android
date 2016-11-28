@@ -16,17 +16,16 @@ public class DBActivities {
         public static final String ROWID = "id";
 //        public static final String IMAGE = "image";
 
-        private static final String TAG = "DBActivities";
         private DBHelper dbHelper;
         private SQLiteDatabase db;
 
     //  Creating table
         private static final String TABLE_CREATE =
-                "create table SmartNotes (id integer primary key autoincrement, "
+                "create table SmartNote (id integer primary key autoincrement, "
                         + "name varchar not null, body varchar not null, date varchar not null);";
 //    + "name varchar not null, body varchar not null, date varchar not null, image varchar);";
 
-        private static final String DATABASE_NAME = "SmartNote";
+        private static final String DATABASE_NAME = "data";
         private static final String DATABASE_TABLE = "SmartNote";
         private static final int DATABASE_VERSION = 2;
 
@@ -46,7 +45,7 @@ public class DBActivities {
 
             @Override
             public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-                Log.w(TAG, "Upgrading database from version " + oldVersion + " to "
+                Log.w("DBActivities", "Upgrading database from version " + oldVersion + " to "
                         + newVersion + ", which will destroy all old data");
                 db.execSQL("DROP TABLE IF EXISTS notes");
                 onCreate(db);
@@ -93,7 +92,6 @@ public class DBActivities {
         public Cursor fetchNote(long rowId) throws SQLException {
 
             Cursor mCursor =
-
                     db.query(true, DATABASE_TABLE, new String[] {ROWID,
                                     NAME, BODY, DATE}, ROWID + "=" + rowId, null,
 //                            NAME, BODY, DATE, IMAGE}, ROWID + "=" + rowId, null,

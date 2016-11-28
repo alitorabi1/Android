@@ -25,8 +25,8 @@
 			android:textSize="18sp"    
 		    android:hint="@string/no_title"
 		    android:layout_toRightOf="@+id/title_text1" 
-		    android:background="@android:color/transparent" 	
-		    android:layout_marginLeft="5dp"	
+		    android:background="@android:color/transparent"
+		    android:layout_marginLeft="5dp"
 			android:singleLine="true"
 			android:imeOptions="actionNext"/>
 		<TextView
@@ -44,7 +44,7 @@
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
 	    android:layout_below="@+id/toplayout"
-	    class="com.example.lenovo.tinanotes.NoteEdit$LineEditText"
+	    class="com.example.lenovo.tinanotes.EditNote$LineEditText"
 	    android:background="@android:color/transparent"
 	    android:capitalize="sentences"
 	    android:fadingEdge="vertical"

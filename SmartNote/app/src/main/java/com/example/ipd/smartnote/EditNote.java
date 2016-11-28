@@ -162,14 +162,16 @@ import android.widget.TextView;
             String image = mBodyText.getText().toString();
 
             if(mRowId == null){
-                long id = mDbHelper.createNote(title, body, curDate, image);
+                long id = mDbHelper.createNote(title, body, curDate);
+//                long id = mDbHelper.createNote(title, body, curDate, image);
                 if(id > 0){
                     mRowId = id;
                 }else{
                     Log.e("saveState","failed to create note");
                 }
             }else{
-                if(!mDbHelper.updateNote(mRowId, title, body, curDate, image)){
+                if(!mDbHelper.updateNote(mRowId, title, body, curDate)){
+//                    if(!mDbHelper.updateNote(mRowId, title, body, curDate, image)){
                     Log.e("saveState","failed to update note");
                 }
             }

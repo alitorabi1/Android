@@ -23,12 +23,11 @@
         android:layout_marginEnd="13dp"
         android:onClick="goBack" />
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/messageme"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/imageView3"
-        android:layout_below="@+id/button12" />
+        android:layout_alignParentLeft="true">
+    </ListView>
 
 </RelativeLayout>

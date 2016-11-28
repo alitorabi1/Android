@@ -1,4 +1,4 @@
-package com.example.ipd.androidsqlite;
+package com.example.ipd.studenttracker;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -10,15 +10,17 @@ public class DataBaseWrapper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "Message.db";
     private static final int DATABASE_VERSION = 1;
 
-//  Database fields
+    //  Table and Database fields
     public static final String MESSAGE = "Message";
-    public static final String Message_ID = "_id";
-    public static final String Message_NAME = "_name";
+    public static final String MESSAGE_ID = "id";
+    public static final String MESSAGE_NAME = "name";
+    public static final String MESSAGE_URL = "url";
 
-//  make a query to grab data
+    //  make a query to grab data
     private static final String DATABASE_CREATE = "create table " + MESSAGE
-            + "(" + Message_ID + " integer primary key autoincrement, "
-            + Message_NAME + " text not null);";
+            + "(" + MESSAGE_ID + " integer primary key autoincrement, "
+            + MESSAGE_NAME + " varchar not null), "
+            + MESSAGE_URL + " varchar not null);";
 
     public DataBaseWrapper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -32,8 +34,6 @@ public class DataBaseWrapper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
-
         db.execSQL("DROP TABLE IF EXISTS " + MESSAGE);
         onCreate(db);
     }
