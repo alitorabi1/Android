@@ -22,11 +22,11 @@ public class DbActivities {
     private SQLiteDatabase mDb;
 
     private static final String DATABASE_NAME = "data";
-    private static final String DATABASE_TABLE = "tinanotes";
+    private static final String DATABASE_TABLE = "tina";
     private static final int DATABASE_VERSION = 2;
 
     private static final String DATABASE_CREATE =
-        "CREATE TABLE IF NOT EXISTS tinanotes (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+        "CREATE TABLE IF NOT EXISTS tina (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
         + "name VARCHAR NOT NULL, body VARCHAR NOT NULL, date VARCHAR NOT NULL, image VARCHAR);";
 
     private final Context mCtx;
@@ -46,7 +46,7 @@ public class DbActivities {
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             Log.w("DbActivities", "Upgrading database from version " + oldVersion + " to "
                     + newVersion + ", which will destroy all old data");
-            db.execSQL("DROP TABLE IF EXISTS tinanotes");
+            db.execSQL("DROP TABLE IF EXISTS tina");
             onCreate(db);
         }
     }
@@ -85,7 +85,7 @@ public class DbActivities {
     public Cursor selectAllNotes() {
 
         return mDb.query(DATABASE_TABLE, new String[] {NOTEID, NAME,
-                BODY, DATE}, null, null, null, null, null);
+                BODY, DATE, IMAGE}, null, null, null, null, null);
     }
 
     public Cursor selectNoteById(long noteId) throws SQLException {
